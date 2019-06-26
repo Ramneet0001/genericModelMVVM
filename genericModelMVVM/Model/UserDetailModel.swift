@@ -11,6 +11,10 @@
     //
     //   let userDetailModel = try? newJSONDecoder().decode(UserDetailModel.self, from: jsonData)
     
+    // Use this link to create model:  https://app.quicktype.io
+
+        
+
     import Foundation
     
     // MARK: - UserDetailModel
