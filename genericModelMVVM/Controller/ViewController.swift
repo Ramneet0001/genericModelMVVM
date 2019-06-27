@@ -47,7 +47,7 @@ extension ViewController {
     
     private func getUserDetail() {
         
-        apiManager.callApiService(urlString: "http://www.mocky.io/v2/5d126e8b3100002fc508d357", method: "GET", headers: [:], params: [:], typeModel: UserDetailModel.self) { (modelResponse, error) in
+        apiManager.callApiService(urlString: api_URL_Model!.baseUrl, method: "GET", headers: [:], params: [:], typeModel: UserDetailModel.self) { (modelResponse, error) in
             
             if let error = error {
                 print("Get error: \(error.localizedDescription)")
