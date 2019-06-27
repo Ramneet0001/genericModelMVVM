@@ -9,6 +9,11 @@
 import UIKit
 import Foundation
 
+protocol ApiMethods {
+    
+    
+}
+
 class ApiManager {
     
     

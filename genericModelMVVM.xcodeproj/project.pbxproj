@@ -15,6 +15,8 @@
 		4B65179B22C27A7C007F226B /* genericModelMVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B65179A22C27A7C007F226B /* genericModelMVVMTests.swift */; };
 		4B6517A622C27A7C007F226B /* genericModelMVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6517A522C27A7C007F226B /* genericModelMVVMUITests.swift */; };
 		4B6517B722C2AACD007F226B /* UserDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6517B622C2AACD007F226B /* UserDetailModel.swift */; };
+		4BBBF96322C4DC6500F59A16 /* ApiURL.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4BBBF96222C4DC6500F59A16 /* ApiURL.plist */; };
+		4BBBF96522C4FC8E00F59A16 /* Api_URL_Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBBF96422C4FC8E00F59A16 /* Api_URL_Model.swift */; };
 		4BBC87DD22C37C4F002C7DE9 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC87DC22C37C4F002C7DE9 /* ApiManager.swift */; };
 		4BBC87DF22C38DCB002C7DE9 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BBC87DE22C38DCB002C7DE9 /* UserViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		4B6517A522C27A7C007F226B /* genericModelMVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = genericModelMVVMUITests.swift; sourceTree = "<group>"; };
 		4B6517A722C27A7C007F226B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B6517B622C2AACD007F226B /* UserDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailModel.swift; sourceTree = "<group>"; };
+		4BBBF96222C4DC6500F59A16 /* ApiURL.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiURL.plist; sourceTree = "<group>"; };
+		4BBBF96422C4FC8E00F59A16 /* Api_URL_Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api_URL_Model.swift; sourceTree = "<group>"; };
 		4BBC87DC22C37C4F002C7DE9 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		4BBC87DE22C38DCB002C7DE9 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +116,7 @@
 				4B65178C22C27A7C007F226B /* Assets.xcassets */,
 				4B65178E22C27A7C007F226B /* LaunchScreen.storyboard */,
 				4B65179122C27A7C007F226B /* Info.plist */,
+				4BBBF96222C4DC6500F59A16 /* ApiURL.plist */,
 			);
 			path = genericModelMVVM;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				4BBC87DE22C38DCB002C7DE9 /* UserViewModel.swift */,
+				4BBBF96422C4FC8E00F59A16 /* Api_URL_Model.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -281,6 +287,7 @@
 				4B65179022C27A7C007F226B /* LaunchScreen.storyboard in Resources */,
 				4B65178D22C27A7C007F226B /* Assets.xcassets in Resources */,
 				4B65178B22C27A7A007F226B /* Main.storyboard in Resources */,
+				4BBBF96322C4DC6500F59A16 /* ApiURL.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +314,7 @@
 			files = (
 				4BBC87DD22C37C4F002C7DE9 /* ApiManager.swift in Sources */,
 				4B65178822C27A7A007F226B /* ViewController.swift in Sources */,
+				4BBBF96522C4FC8E00F59A16 /* Api_URL_Model.swift in Sources */,
 				4B6517B722C2AACD007F226B /* UserDetailModel.swift in Sources */,
 				4BBC87DF22C38DCB002C7DE9 /* UserViewModel.swift in Sources */,
 				4B65178622C27A7A007F226B /* AppDelegate.swift in Sources */,

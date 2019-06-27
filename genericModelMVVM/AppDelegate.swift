@@ -8,7 +8,10 @@
 
 import UIKit
 
+
+
 @UIApplicationMain
+
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
@@ -16,6 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        getUrlApis()
+        
         return true
     }
 
@@ -41,6 +47,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // getting Apis
+    
+    func getUrlApis(){
+        
+        let values = Bundle.contentsOfFile(plistName: "ApiURL.plist")
+        
+        let jsonData = try? JSONSerialization.data(withJSONObject: values, options: [])
+        
+        if let modelCodable = try? JSONDecoder().decode(Api_URL_Model.self , from: jsonData!){
+            
+            api_URL_Model = modelCodable
+        }
+    }
 
 }
 
+public extension Bundle {
+    /**
+     Gets the contents of the specified plist file.
+     
+     - parameter plistName: property list where defaults are declared
+     - parameter bundle: bundle where defaults reside
+     
+     - returns: dictionary of values
+     */
+    public static func contentsOfFile(plistName: String, bundle: Bundle? = nil) -> [String : AnyObject] {
+        let fileParts = plistName.components(separatedBy: ".")
+        
+        guard fileParts.count == 2,
+            let resourcePath = (bundle ?? Bundle.main).path(forResource: fileParts[0], ofType: fileParts[1]),
+            let contents = NSDictionary(contentsOfFile: resourcePath) as? [String : AnyObject]
+            else { return [:]
+        }
+        
+        return contents
+    }
+}
